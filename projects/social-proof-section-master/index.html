@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,51 +10,142 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <section class="social-proof">
+      <img
+        class="bg-pattern bg-pattern-top-mobile"
+        src="./images/bg-pattern-top-mobile.svg"
+        alt="img"
+      />
+      <img
+        class="bg-pattern bg-pattern-top-desktop"
+        src="./images/bg-pattern-top-desktop.svg"
+        alt="img"
+      />
+      <img
+        class="bg-pattern bg-pattern-bottom-mobile"
+        src="./images/bg-pattern-bottom-mobile.svg"
+        alt="img"
+      />
+      <img
+        class="bg-pattern bg-pattern-bottom-desktop"
+        src="./images/bg-pattern-bottom-desktop.svg"
+        alt="img"
+      />
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+      <div class="container">
+        <div class="top">
+          <div class="intro">
+            <h2>10,000+ of our users love our products.</h2>
+            <p>
+              We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our
+              services.
+            </p>
+          </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+          <div class="ratings">
+            <div class="rating-card">
+              <div class="stars">
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+              </div>
+              <p class="rating-text">Rated 5 Stars in Reviews</p>
+            </div>
+
+            <div class="rating-card">
+              <div class="stars">
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+              </div>
+              <p class="rating-text">Rated 5 Stars in Report Guru</p>
+            </div>
+
+            <div class="rating-card">
+              <div class="stars">
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+                <img class="star" src="./images/icon-star.svg" alt="img" />
+              </div>
+              <p class="rating-text">Rated 5 Stars in BestTech</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews">
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-image"
+                src="./images/image-colton.jpg"
+                alt="Colton Smith photo"
+              />
+              <div>
+                <p class="review-name">Colton Smith</p>
+                <p class="review-status">Verified Buyer</p>
+              </div>
+            </div>
+
+            <p class="review-para">
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent!"
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-image"
+                src="./images/image-irene.jpg"
+                alt="Irene Roberts photo"
+              />
+              <div>
+                <p class="review-name">Irene Roberts</p>
+                <p class="review-status">Verified Buyer</p>
+              </div>
+            </div>
+
+            <p class="review-para">
+              "Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                class="review-image"
+                src="./images/image-anne.jpg"
+                alt="Anne Wallace photo"
+              />
+              <div class="review-meta">
+                <p class="review-name">Anne Wallace</p>
+                <p class="review-status">Verified Buyer</p>
+              </div>
+            </div>
+
+            <p class="review-para">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

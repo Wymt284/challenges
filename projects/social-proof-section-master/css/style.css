@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: var(--light-grayish-magenta);
+  color: var(--very-dark-magenta);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+.social-proof {
+  position: relative;
+  overflow: hidden;
+
+  .bg-pattern {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    display: block;
+  }
+
+  .bg-pattern-top-desktop,
+  .bg-pattern-bottom-desktop {
+    display: none;
+  }
+
+  .bg-pattern-top-mobile,
+  .bg-pattern-top-desktop {
+    top: -40px;
+  }
+
+  .bg-pattern-bottom-mobile,
+  .bg-pattern-bottom-desktop {
+    bottom: -60px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    position: relative;
+    z-index: 1;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .intro {
+      h2 {
+        margin: 0 0 1rem;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: var(--dark-grayish-magenta);
+      }
+    }
+
+    .ratings {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .rating-card {
+        background: var(--light-grayish-magenta);
+        border-radius: 0.5rem;
+        padding: 1rem 1.25rem;
+      }
+
+      .stars {
+        display: flex;
+        gap: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .star {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .rating-text {
+        margin: 0;
+        font-weight: 700;
+        color: var(--very-dark-magenta);
+      }
+    }
+
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .review-card {
+        background: var(--very-dark-magenta);
+        border-radius: 0.5rem;
+        padding: 2rem 1.75rem;
+        color: var(--white);
+
+        .review-header {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .review-image {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .review-name {
+          margin: 0;
+          font-weight: 700;
+        }
+
+        .review-status {
+          margin: 0.15rem 0 0;
+          color: var(--soft-pink);
+          font-weight: 400;
+        }
+
+        .review-para {
+          margin: 0;
+          color: var(--white);
+          opacity: 0.92;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .social-proof {
+    .container {
+      .top {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .intro {
+        flex: 1;
+      }
+
+      .ratings {
+        flex: 1;
+        padding-top: 0.35rem;
+
+        .rating-card:nth-child(2) {
+          transform: translateX(2rem);
+        }
+
+        .rating-card:nth-child(3) {
+          transform: translateX(4rem);
+        }
+      }
+
+      .reviews {
+        flex-direction: row;
+        gap: 1.5rem;
+        padding-top: 0.5rem;
+
+        .review-card {
+          flex: 1;
+        }
+
+        /* Desktop staggering */
+        .review-card:nth-child(2) {
+          transform: translateY(1.25rem);
+        }
+
+        .review-card:nth-child(3) {
+          transform: translateY(2.5rem);
+        }
+      }
+    }
+
+    .bg-pattern-top-mobile,
+    .bg-pattern-bottom-mobile {
+      display: none;
+    }
+
+    .bg-pattern-top-desktop,
+    .bg-pattern-bottom-desktop {
+      display: block;
+    }
+  }
+}
