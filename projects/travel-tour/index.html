@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waiyan — Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hero-block">
+      <header class="site-header">
+        <div class="wrap header-row">
+          <a class="logo" href="index.html"
+            ><span class="logo-mark"></span>Waiyan</a
+          >
+          <nav class="main-nav">
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="header-tools">
+            <button type="button" title="Cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button type="button" title="Login">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </button>
+            <button type="button" title="Favorites">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-inner wrap">
+          <div class="yellow-line"></div>
+          <h1>PARIS TOURS GRID</h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="toolbar">
+      <div class="wrap toolbar-inner">
+        <div class="toolbar-tabs">
+          <a href="#">All</a>
+          <a href="#">Popular</a>
+          <a href="#">Latest</a>
+        </div>
+        <div class="toolbar-side">
+          <a class="toolbar-map" href="#">View on map</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <div class="wrap">
+        <form class="search-panel" action="#" method="get">
+          <div class="search-row">
+            <div class="search-cell">
+              <label for="q">Search</label>
+              <input
+                type="search"
+                id="q"
+                name="q"
+                placeholder="What are you looking for..."
+              />
+            </div>
+            <div class="search-cell">
+              <label for="where">Where</label>
+              <input type="text" id="where" name="where" placeholder="Where" />
+            </div>
+            <div class="search-cell">
+              <label for="cat">Category</label>
+              <select id="cat" name="category">
+                <option>All Categories</option>
+                <option>Museums</option>
+                <option>Walking</option>
+                <option>Food</option>
+              </select>
+            </div>
+            <div class="search-cell search-cell-btn">
+              <button type="submit">Search</button>
+            </div>
+          </div>
+          <div class="search-row">
+            <div class="search-cell">
+              <label for="in">Check-in</label>
+              <input type="date" id="in" name="checkin" />
+            </div>
+            <div class="search-cell">
+              <label for="out">Check-out</label>
+              <input type="date" id="out" name="checkout" />
+            </div>
+            <div class="search-cell">
+              <label for="guests">Guests</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="12"
+                value="2"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <div class="card-list">
+          <article class="card">
+            <div class="card-photo">
+              <img src="https://picsum.photos/id/29/800/500" alt="Museum" />
+              <span class="tag">MUSEUM</span>
+              <button type="button" class="heart-btn" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h2>Pompidue Museum</h2>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <p class="price-line">From <strong>$45</strong> /per person</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-time"
+                ><i class="fa-regular fa-clock"></i> 2h 30min</span
+              >
+              <div class="card-rate">
+                <div>
+                  <span class="rate-word">Superb</span>
+                  <em>350 Reviews</em>
+                </div>
+                <span class="score">9.0</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo">
+              <img
+                src="https://picsum.photos/id/42/800/500"
+                alt="Eiffel Tower"
+              />
+              <span class="tag">WALKING</span>
+              <button type="button" class="heart-btn" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h2>Tour Eiffel</h2>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
+                ad minim veniam, quis nostrud exercitation.
+              </p>
+              <p class="price-line">From <strong>$65</strong> /per person</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-time"
+                ><i class="fa-regular fa-clock"></i> 1h 30min</span
+              >
+              <div class="card-rate">
+                <div>
+                  <span class="rate-word">Good</span>
+                  <em>120 Reviews</em>
+                </div>
+                <span class="score">7.5</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-photo">
+              <img src="https://picsum.photos/id/57/800/500" alt="Louvre" />
+              <span class="tag">MUSEUM</span>
+              <button type="button" class="heart-btn" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h2>Louvre Museum</h2>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                aute irure dolor in reprehenderit in voluptate.
+              </p>
+              <p class="price-line">From <strong>$95</strong> /per person</p>
+            </div>
+            <div class="card-footer">
+              <span class="card-time"
+                ><i class="fa-regular fa-clock"></i>1h 30min</span
+              >
+              <div class="card-rate">
+                <div>
+                  <span class="rate-word">Good</span>
+                  <em>280 Reviews</em>
+                </div>
+                <span class="score">7.8</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="load-more">
+          <button type="button">Load more</button>
+        </div>
+      </div>
+    </main>
+
+    <section class="info-row">
+      <div class="wrap info-list">
+        <div class="info-box">
+          <div class="info-icon-wrap">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <h3>Need Help? Contact us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Helpful
+            support when you need it.
+          </p>
+        </div>
+        <div class="info-box">
+          <div class="info-icon-wrap"><i class="fa-brands fa-cc-visa"></i></div>
+          <h3>Payments</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Secure
+            payment options for every booking.
+          </p>
+        </div>
+        <div class="info-box">
+          <div class="info-icon-wrap">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3>Cancel Policy</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fair
+            cancellation terms on select tours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand" href="index.html"
+            ><span class="logo-mark"></span>Waiyan</a
+          >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            blandit tempus porttitor.
+          </p>
+          <p class="social-line">
+            <span class="follow-label">FOLLOW US</span><br />
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Useful links</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact with Us</h3>
+          <p><i class="fa-solid fa-square-phone"></i> +61 12345005</p>
+          <p><i class="fa-regular fa-envelope-open"></i> info@barnyar.com</p>
+          <h3>Newsletter</h3>
+          <form class="newsletter" action="#" method="get">
+            <input type="email" name="email" placeholder="Your email" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="wrap">
+        <p class="footer-bottom">
+          <i class="fa-regular fa-copyright"></i> 2026 Waiyan — travel vlog.
+        </p>
+      </div>
+    </footer>
+
+    <a class="to-top" href="#top" title="Back to top">^</a>
+  </body>
+</html>
